@@ -129,8 +129,6 @@ flutter build web --release
 # Os arquivos ficam em: build/web/
 ```
 
-O app roda em **iOS**, **Android**, **Web**.
-
 ---
 
 ## 📦 Dependências
