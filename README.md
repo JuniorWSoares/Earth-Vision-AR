@@ -59,7 +59,7 @@ lib/
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/earth-vision-ar.git
+git clone https://github.com/JuniorWSoares/Earth-Vision-AR.git
 cd earth-vision-ar
 
 # Instale as dependências
@@ -69,7 +69,7 @@ flutter pub get
 flutter run
 ```
 
-O app roda em **Android**, **iOS**, **Web**, **Windows**, **macOS** e **Linux**.
+O app roda em **iOS**, **Android**, **Web**.
 
 ---
 
