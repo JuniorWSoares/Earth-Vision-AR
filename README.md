@@ -69,6 +69,66 @@ flutter pub get
 flutter run
 ```
 
+---
+
+### 🤖 Android
+
+**Requisitos:** Android Studio instalado, emulador configurado ou dispositivo físico com USB debugging ativo.
+
+```bash
+# Verifique se o dispositivo está conectado
+flutter devices
+
+# Rode no Android
+flutter run -d android
+
+# Gerar APK de release
+flutter build apk --release
+# O arquivo ficará em: build/app/outputs/flutter-apk/app-release.apk
+
+# Gerar App Bundle para Google Play
+flutter build appbundle --release
+```
+
+> **Versão mínima:** Android 5.0 (API 21). A permissão de internet já está configurada no `AndroidManifest.xml` para carregar imagens e dados de rede.
+
+---
+
+### 🍎 iOS
+
+**Requisitos:** macOS com Xcode 14 ou superior. Para rodar em dispositivo físico é necessário uma conta Apple Developer.
+
+```bash
+# Instale as dependências nativas
+cd ios && pod install && cd ..
+
+# Rode no simulador iOS
+flutter run -d ios
+
+# Rode em dispositivo físico (deve estar listado em flutter devices)
+flutter run -d <device-id>
+
+# Gerar build de release (abre o Xcode para assinar e exportar)
+flutter build ios --release
+```
+
+> A chave `NSCameraUsageDescription` já está declarada no `Info.plist` — exigida pela App Store para qualquer app que acesse a câmera.
+
+---
+
+### 🌐 Web
+
+**Requisitos:** Navegador moderno. Para a funcionalidade de AR (`ar.html`) é necessário HTTPS e Chrome 81+ no Android ou Safari 12+ no iOS.
+
+```bash
+# Rode localmente com hot reload
+flutter run -d chrome
+
+# Build de produção
+flutter build web --release
+# Os arquivos ficam em: build/web/
+```
+
 O app roda em **iOS**, **Android**, **Web**.
 
 ---
